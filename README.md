@@ -37,14 +37,13 @@ The application is configured via `config.yaml`. Key settings include:
 - **Logging settings**: Log level and output format
 - **Feature flags**: Enable/disable application features
 
-<!-- Uncomment when authentication feature is complete:
 ## Authentication
 
 The application supports user authentication with the following features:
 
 - Local authentication with configurable password policies
 - Session management with customizable timeout
-- Login attempt limiting for security -->
+- Login attempt limiting for security
 
 
 ## Project Structure

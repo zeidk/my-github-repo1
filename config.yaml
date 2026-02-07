@@ -50,13 +50,11 @@ features:
 # =============================================================================
 # Authentication Settings (to be configured in feature branch)
 # =============================================================================
-# Uncomment the following section when implementing user authentication:
-
-# authentication:
-#   enabled: true
-#   provider: "local"
-#   session_timeout: 3600  # 1 hour
-#   max_attempts: 5
+authentication:
+  enabled: true
+  provider: "local"
+  session_timeout: 3600  # 1 hour
+  max_attempts: 5
 
 # =============================================================================
 # API Settings
