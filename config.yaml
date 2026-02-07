@@ -1,0 +1,75 @@
+# Application Configuration File
+# This file contains settings for the application.
+
+# =============================================================================
+# General Settings
+# =============================================================================
+app:
+  name: "MyApp"
+  version: "1.0.0"
+  environment: "development"  # development, staging, production
+
+# =============================================================================
+# Server Settings
+# =============================================================================
+server:
+  host: "localhost"
+  port: 8080
+  timeout: 5  # seconds - default request timeout
+  
+# =============================================================================
+# Database Settings
+# =============================================================================
+database:
+  driver: "postgresql"
+  host: "localhost"
+  port: 5432
+  name: "myapp_dev"
+  pool_size: 10
+
+# =============================================================================
+# Logging Settings
+# =============================================================================
+logging:
+  level: "info"  # debug, info, warning, error
+  format: "json"
+  output: "stdout"  # stdout, file
+  # file_path: "/var/log/myapp/app.log"
+
+# =============================================================================
+# Feature Flags
+# =============================================================================
+features:
+  # Enable or disable specific features
+  dark_mode: true
+  notifications: true
+  analytics: false
+
+# =============================================================================
+# Authentication Settings (to be configured in feature branch)
+# =============================================================================
+# Uncomment the following section when implementing user authentication:
+
+# authentication:
+#   enabled: true
+#   provider: "local"
+#   session_timeout: 3600  # 1 hour
+#   max_attempts: 5
+
+# =============================================================================
+# API Settings
+# =============================================================================
+api:
+  rate_limit: 100  # requests per minute
+  cors_enabled: true
+  allowed_origins:
+    - "http://localhost:3000"
+    - "http://localhost:8080"
+
+# =============================================================================
+# Cache Settings
+# =============================================================================
+cache:
+  enabled: true
+  driver: "memory"  # memory, redis
+  ttl: 300  # seconds
