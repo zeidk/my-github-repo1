@@ -15,7 +15,9 @@ app:
 server:
   host: "localhost"
   port: 8080
-  timeout: 5  # seconds - default request timeout
+  timeout: 10  # seconds - default request timeout
+  auth_enabled: true
+  auth_provider: "local"
   
 # =============================================================================
 # Database Settings
